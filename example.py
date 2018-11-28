@@ -50,7 +50,7 @@ df4 = pd.DataFrame({
     'freq': [i for (_, i) in bigrams_pmi]
 })
 
-
+#Create Excel File
 writer = pd.ExcelWriter(r'./output_nomen.xlsx')
 df1.to_excel(writer, 'Length')
 df2.to_excel(writer, 'Freq of words')
